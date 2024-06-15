@@ -1,0 +1,44 @@
+body{
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-color: rgb(177, 202, 224);
+}
+
+nav{
+    background-color: #7fffd4;
+}
+
+main{
+    background-color: #33BBFF;
+    font-size: 80%;
+    font-weight: 10;
+}
+
+footer{
+    background-color: lightpink;
+    font-variant: small-caps;
+    font-size: 55%;
+}
+
+li{
+    display: inline-block;
+    background-color: lightyellow;
+    width: 30%;
+}
+
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(3, 3, 120, 0.252);
+}
+
+p{
+    line-height: 125%;
+}
+
+a{
+    color: black;
+}
