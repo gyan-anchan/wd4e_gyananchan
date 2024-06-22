@@ -1,0 +1,39 @@
+a{
+    background-color: beige;
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+    text-decoration: underline;
+    margin: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: #dcdcdc;
+    display:inline-block;
+    width: 80%;
+}
+
+nav img{
+    width: 10%;
+}
+
+.grid {
+    background-color: #ffebcd;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+  }
+
+  img .grid{
+    width: 100%;
+  }
+
+  h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #325adb;
+    text-align: center;
+  }
+  
