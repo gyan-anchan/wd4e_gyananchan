@@ -1,0 +1,130 @@
+header{
+    background-color: #04000f;
+    background-image: url('../images/display_image.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+header a{
+    color: rgb(44, 41, 32);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+#skip_to_main{ /* SKIP TO MAINDISPLAYS WHEN TAB IS PRESSED */
+    display: inline ;
+    color: rgba(255, 255, 255, 0);  
+    left:   0px;
+    background-color: #ffffff00;
+}
+
+#skip_to_main:focus{
+    left: 0;
+    color: #04000f;
+    background-color: antiquewhite;
+    position: static;
+}
+
+header div{ /* FLEX IS USED HERE! */
+    display: inline-flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    flex-wrap: nowrap;
+    background-color: antiquewhite;
+    height: fit-content;
+    margin: 0% 2% 0% 3%; /* Use of the box model */
+    padding: 1.5%;
+    border-style: solid;
+    border-color: rgb(81, 140, 192);
+    border-width: 10%;
+    border-radius: 1.2vw;
+    object-fit: contain;
+}
+
+header h1{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 400%;
+}
+
+footer{
+    display: block;
+}
+
+section .images_display{
+    display: block;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+section .images_display img{ /* BOX MODEL IS USED HERE */
+    height: 80%;
+    width: 80%;
+    transition-duration: 0.3s;
+    border-style: double;
+    border-width: 0vw;
+    border-radius: 1vw;
+    padding: 2%; 
+    margin: 4%;
+}
+
+section .images_display img:hover{
+    scale: 110%;
+    border-style: double;
+    border-width: 1.5vw;
+}
+
+section{   /* GRID IS USED HERE */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+main section div img{
+    width: 35vw;
+    margin: 2vw auto;
+}
+
+main section .re_section{
+    width: 99vw;
+    margin: auto;
+}
+
+main section .re_section{ /* FLEX IS USED HERE */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+main section .re_section img:nth-child(2n){
+    border-style: dashed;
+    border-width: 0vw;
+    transition: 0.5s;
+}
+
+main section .re_section img:nth-child(2n+1){
+    border-style: ridge;
+    border-width: 0vw;
+    transition: 0.5s;
+}
+
+main section .re_section img:nth-child(2n):hover{
+    border-style: dashed;
+    border-width: 1vw;
+}
+
+main section .re_section img:nth-child(2n+1):hover{
+    border-style: ridge;
+    border-width: 1vw;
+    border-color: rgb(230, 135, 81);
+}
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
